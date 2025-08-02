@@ -14,7 +14,7 @@ export function StoryCard({ image, category, title, author }: StoryCardProps) {
       <Link href="#" className="block mb-4 overflow-hidden">
         <Image
           src={image || "/placeholder.svg"}
-          alt={title}
+          alt={`${title} (${category})`}
           width={400}
           height={300}
           className="w-full h-auto object-cover aspect-[4/3] transition-opacity group-hover:opacity-80"

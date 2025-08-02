@@ -12,98 +12,98 @@ export function Footer() {
           <ul className="space-y-2 text-sm font-light">
             <li>
               <Link href="#" className="hover:underline">
-                Magazine
+                Списание
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:underline">
-                Shop
+                Магазин
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:underline">
-                Events & Exhibitions
+                Събития и изложби
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:underline">
-                Licensing
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="space-y-4">
-          <h3 className="text-sm font-bold uppercase tracking-wider mb-4">About</h3>
-          <ul className="space-y-2 text-sm font-light">
-            <li>
-              <Link href="#" className="hover:underline">
-                History
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="hover:underline">
-                Join
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="hover:underline">
-                Partner With Us
+                Лицензиране
               </Link>
             </li>
           </ul>
         </div>
         <div className="space-y-4">
-          <h3 className="text-sm font-bold uppercase tracking-wider mb-4">Shop</h3>
+          <h3 className="text-sm font-bold uppercase tracking-wider mb-4">За нас</h3>
           <ul className="space-y-2 text-sm font-light">
             <li>
               <Link href="#" className="hover:underline">
-                Contact
+                История
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:underline">
-                Shipping
+                Присъединете се
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:underline">
-                Returns
+                Партнирайте си с нас
               </Link>
             </li>
           </ul>
         </div>
         <div className="space-y-4">
-          <h3 className="text-sm font-bold uppercase tracking-wider mb-4">Policies</h3>
+          <h3 className="text-sm font-bold uppercase tracking-wider mb-4">Магазин</h3>
           <ul className="space-y-2 text-sm font-light">
             <li>
               <Link href="#" className="hover:underline">
-                Code of Conduct
+                Контакт
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:underline">
-                Privacy
+                Доставка
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:underline">
-                Cookies
+                Връщания
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="space-y-4">
+          <h3 className="text-sm font-bold uppercase tracking-wider mb-4">Политики</h3>
+          <ul className="space-y-2 text-sm font-light">
+            <li>
+              <Link href="#" className="hover:underline">
+                Кодекс за поведение
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:underline">
+                Поверителност
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:underline">
+                Бисквитки
               </Link>
             </li>
           </ul>
         </div>
       </div>
       <div className="container px-4 md:px-6 mt-12 pt-8 border-t border-gray-800 flex flex-col items-center text-center">
-        <p className="text-sm text-gray-400 mb-4">Stay in touch</p>
+        <p className="text-sm text-gray-400 mb-4">Останете във връзка</p>
         <div className="flex w-full max-w-sm items-center space-x-2">
           <Input
             type="email"
-            placeholder="Enter your email address"
+            placeholder="Въведете своя имейл адрес"
             className="flex-1 bg-gray-900 border-gray-700 text-white placeholder:text-gray-500 focus:ring-offset-0 focus:ring-transparent"
           />
           <Button type="submit" variant="ghost" size="icon" className="text-white hover:bg-gray-800">
             <ArrowRight className="h-5 w-5" />
-            <span className="sr-only">Subscribe</span>
+            <span className="sr-only">Абониране</span>
           </Button>
         </div>
       </div>

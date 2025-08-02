@@ -7,17 +7,12 @@ export function HeroSection() {
         <div className="flex flex-col items-center text-center">
           <div className="w-full max-w-3xl mx-auto mb-8">
             <Image
-              src="/placeholder.svg?height=1000&width=700"
-              alt="Featured Image"
+              src="/images/street-scene.jpg"
+              alt="Черно-бяла улична сцена с голо дърво, стара сграда и улична лампа"
               width={700}
               height={1000}
               className="w-full h-auto object-cover aspect-[7/10] md:aspect-[7/10] lg:aspect-[7/10]"
             />
-          </div>
-          <div className="max-w-2xl mx-auto space-y-4">
-            <p className="text-xs uppercase tracking-widest text-gray-500 font-sans">Arts & Culture</p>
-            <h1 className="text-4xl md:text-6xl font-bold font-serif leading-tight">The Way Back</h1>
-            <p className="text-lg text-gray-600 font-sans">Bruce Davidson</p>
           </div>
         </div>
       </div>
