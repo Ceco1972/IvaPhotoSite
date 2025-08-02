@@ -4,6 +4,9 @@ import { CollectionDetailPage } from "@/components/collection-detail-page"
 
 export default function OutskirtsCollectionPage() {
   const images = [
+    { src: "/images/collections/train-wagon-vines.jpg", alt: "Червен влаков вагон, обрасъл с лози" },
+    { src: "/images/collections/graffiti-building.jpg", alt: "Сграда с графити и метална конструкция" },
+    { src: "/images/collections/horse-cart-village.jpg", alt: "Кон с каруца и хора пред село" },
     { src: "/placeholder.svg?height=400&width=600", alt: "Разрушена сграда" },
     { src: "/placeholder.svg?height=400&width=600", alt: "Изоставена фабрика" },
     { src: "/placeholder.svg?height=400&width=600", alt: "Графити стена" },

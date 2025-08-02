@@ -5,6 +5,14 @@ import { Menu, Search, LogIn } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import {
+  NavigationMenu,
+  NavigationMenuList,
+  NavigationMenuItem,
+  NavigationMenuTrigger,
+  NavigationMenuContent,
+  NavigationMenuLink,
+} from "@/components/ui/navigation-menu"
 
 export function Header() {
   const navLinks = [
@@ -12,7 +20,7 @@ export function Header() {
     { name: "Фотографи", href: "#photographers" },
     { name: "Практически съвети", href: "#learn" },
     { name: "Теория", href: "#fine-prints" },
-    { name: "Колекции", href: "/collections" }, // Updated href
+    { name: "Колекции", href: "/collections" },
   ]
 
   return (
@@ -26,11 +34,41 @@ export function Header() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm font-light text-gray-700 hover:text-black transition-colors"
+              className="text-sm font-light text-gray-700 hover:text-black transition-colors py-2"
             >
               {link.name}
             </Link>
           ))}
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="text-sm font-light text-gray-700 hover:text-black transition-colors bg-transparent data-[active]:bg-transparent data-[state=open]:bg-transparent flex items-center px-4 py-2">
+                  и всички визуални неща
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                    <li className="row-span-3">
+                      <NavigationMenuLink asChild>
+                        <a
+                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                          href="https://www.openculture.com/2020/09/la-jetee-study-guide.html"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <div className="mb-2 mt-4 text-lg font-medium">
+                            Understanding Chris Marker's Radical Sci-Fi Film La Jetée
+                          </div>
+                          <p className="text-sm leading-tight text-muted-foreground">
+                            A Study Guide Distributed to High Schools in the 1970s | Open Culture
+                          </p>
+                        </a>
+                      </NavigationMenuLink>
+                    </li>
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
         </nav>
       </div>
       <div className="flex items-center space-x-4">
@@ -54,14 +92,30 @@ export function Header() {
             </Link>
             <nav className="grid gap-4 py-4">
               {navLinks.map((link) => (
-                <Link key={link.name} href={link.href} className="text-lg font-medium text-gray-800 hover:text-black">
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className="text-lg font-medium text-gray-800 hover:text-black py-2"
+                >
                   {link.name}
                 </Link>
               ))}
-              <Link href="#search" className="text-lg font-medium text-gray-800 hover:text-black flex items-center">
+              {/* For mobile, keeping it as a simple link for now */}
+              <Link
+                href="https://www.openculture.com/2020/09/la-jetee-study-guide.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg font-medium text-gray-800 hover:text-black py-2"
+              >
+                и всички визуални неща
+              </Link>
+              <Link
+                href="#search"
+                className="text-lg font-medium text-gray-800 hover:text-black flex items-center py-2"
+              >
                 <Search className="h-5 w-5 mr-2" /> Търсене
               </Link>
-              <Link href="#login" className="text-lg font-medium text-gray-800 hover:text-black flex items-center">
+              <Link href="#login" className="text-lg font-medium text-gray-800 hover:text-black flex items-center py-2">
                 <LogIn className="h-5 w-5 mr-2" /> Вход
               </Link>
             </nav>

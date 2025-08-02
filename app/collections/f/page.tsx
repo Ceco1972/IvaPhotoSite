@@ -4,6 +4,9 @@ import { CollectionDetailPage } from "@/components/collection-detail-page"
 
 export default function PhotographicCollectionPage() {
   const images = [
+    { src: "/images/collections/spider-web-dew.jpg", alt: "Паяк върху паяжина с водни капчици" },
+    { src: "/images/collections/seagulls-old-building.jpg", alt: "Чайки пред стара сграда" },
+    { src: "/images/collections/modern-architecture-night.jpg", alt: "Модерна архитектура през нощта" },
     { src: "/placeholder.svg?height=400&width=600", alt: "Винтидж фотоапарат" },
     { src: "/placeholder.svg?height=400&width=600", alt: "Фотограф в действие" },
     { src: "/placeholder.svg?height=400&width=600", alt: "Проявяване в тъмна стая" },

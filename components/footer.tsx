@@ -6,18 +6,13 @@ import { Button } from "@/components/ui/button"
 export function Footer() {
   return (
     <footer className="bg-black text-white py-12 md:py-16 lg:py-20">
-      <div className="container px-4 md:px-6 grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
-        <div className="space-y-4">
-          <h3 className="text-sm font-bold uppercase tracking-wider mb-4">Magnum Photos</h3>
+      <div className="container px-4 md:px-6 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16">
+        <div className="space-y-4 flex flex-col items-center text-center">
+          <h3 className="text-sm font-bold uppercase tracking-wider mb-4">УЛИЦАТА</h3>
           <ul className="space-y-2 text-sm font-light">
             <li>
               <Link href="#" className="hover:underline">
                 Списание
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="hover:underline">
-                Магазин
               </Link>
             </li>
             <li>
@@ -32,8 +27,8 @@ export function Footer() {
             </li>
           </ul>
         </div>
-        <div className="space-y-4">
-          <h3 className="text-sm font-bold uppercase tracking-wider mb-4">За нас</h3>
+        <div className="space-y-4 flex flex-col items-center text-center">
+          <h3 className="text-sm font-bold uppercase tracking-wider mb-4">ЗА НАС</h3>
           <ul className="space-y-2 text-sm font-light">
             <li>
               <Link href="#" className="hover:underline">
@@ -52,28 +47,8 @@ export function Footer() {
             </li>
           </ul>
         </div>
-        <div className="space-y-4">
-          <h3 className="text-sm font-bold uppercase tracking-wider mb-4">Магазин</h3>
-          <ul className="space-y-2 text-sm font-light">
-            <li>
-              <Link href="#" className="hover:underline">
-                Контакт
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="hover:underline">
-                Доставка
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="hover:underline">
-                Връщания
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="space-y-4">
-          <h3 className="text-sm font-bold uppercase tracking-wider mb-4">Политики</h3>
+        <div className="space-y-4 flex flex-col items-center text-center">
+          <h3 className="text-sm font-bold uppercase tracking-wider mb-4">ПОЛИТИКИ</h3>
           <ul className="space-y-2 text-sm font-light">
             <li>
               <Link href="#" className="hover:underline">
